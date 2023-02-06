@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">NUMAD23Sp_ShiZeng</string>
     <string name="about_me">About Me</string>
+    <string name="Info">Shi Zeng\nzeng.shi1@northeastern.edu</string>
     <string name="Clicky">Clicky Clicky</string>
     <string name="ClickyActivity">Clicky Activity</string>
     <string name="Pressed">Pressed: - </string>
@@ -10,4 +11,7 @@
     <string name="D">D</string>
     <string name="E">E</string>
     <string name="F">F</string>
+    <string name="Link_Collector">Link Collector</string>
+    <string name="Add_Url">Add URL</string>
+    <string name="Add_Url_Hint">Please enter the link, no need https://www.</string>
 </resources>
