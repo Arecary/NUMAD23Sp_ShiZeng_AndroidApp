@@ -14,4 +14,8 @@
     <string name="Link_Collector">Link Collector</string>
     <string name="Add_Url">Add URL</string>
     <string name="Add_Url_Hint">Please enter the link, no need https://www.</string>
+    <string name="Prime_Directive">Prime Directive</string>
+    <string name="Find_Primes">Find Primes</string>
+    <string name="Terminate_Search">Terminate Search</string>
+    <string name="CheckBox">3</string>
 </resources>

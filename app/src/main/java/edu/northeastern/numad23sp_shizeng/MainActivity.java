@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button1 = (Button) findViewById(R.id.button_AboutMe);
         Button button2 = (Button) findViewById(R.id.button_Clicky);
         Button button3 = (Button) findViewById(R.id.button_LinkCollector);
+        Button button4 = (Button) findViewById(R.id.button_Prime);
 /*        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
+        button4.setOnClickListener(this);
 
     }
 
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(i);
         } else if (view.getId() == R.id.button_LinkCollector) {
             i.setClass(this, LinkCollector.class);
+            startActivity(i);
+        } else if (view.getId() == R.id.button_Prime) {
+            i.setClass(this, PrimeDirective.class);
             startActivity(i);
         }
     }

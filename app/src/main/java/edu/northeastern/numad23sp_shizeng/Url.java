@@ -1,7 +1,9 @@
 package edu.northeastern.numad23sp_shizeng;
 
-public class Url {
-    private final String url;
+import java.io.Serializable;
+
+public class Url implements Serializable {
+    private final String url ;
 
 
     public Url(String url) {

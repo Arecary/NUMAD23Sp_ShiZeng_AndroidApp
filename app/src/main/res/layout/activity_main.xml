@@ -24,9 +24,10 @@
         android:text="@string/about_me"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/text_HelloWorld" />
+        app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
+        app:layout_constraintVertical_bias="0.166" />
 
     <Button
         android:id="@+id/button_Clicky"
@@ -38,8 +39,9 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/button_AboutMe"
-        app:layout_constraintVertical_bias="0.246"
+        app:layout_constraintVertical_bias="0.124"
         tools:ignore="MissingConstraints" />
+
 
     <Button
         android:id="@+id/button_LinkCollector"
@@ -50,6 +52,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
-        app:layout_constraintVertical_bias="0.595" />
+        app:layout_constraintVertical_bias="0.367" />
+
+    <Button
+        android:id="@+id/button_Prime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Prime_Directive"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_LinkCollector"
+        app:layout_constraintVertical_bias="0.024" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

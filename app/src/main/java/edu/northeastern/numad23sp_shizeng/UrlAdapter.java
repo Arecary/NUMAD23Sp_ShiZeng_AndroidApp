@@ -35,13 +35,18 @@ public class UrlAdapter extends RecyclerView.Adapter<UrlAdapter.UrlViewHolder> {
 
     @Override
     public int getItemCount() {
-        return data==null ? 0 : data.size();
+        return data == null ? 0 : data.size();
+    }
+
+    public List<Url> getData() {
+        return data;
     }
 
     public void addData(int position, Url url) {
         data.add(position, url);
         notifyItemInserted(position);
     }
+
 
     @SuppressLint("NotifyDataSetChanged")
     public void removeData(int position) {
@@ -67,7 +72,8 @@ public class UrlAdapter extends RecyclerView.Adapter<UrlAdapter.UrlViewHolder> {
             });
         }
 
-        public void bindThisData (Url url) {
+        public void bindThisData(Url url) {
+            System.out.println("url is " + url.getUrl());
             urlTV.setText(url.getUrl());
         }
     }
