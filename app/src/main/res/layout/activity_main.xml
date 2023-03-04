@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2" />
 
+
     <Button
         android:id="@+id/button_AboutMe"
         android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
-        app:layout_constraintVertical_bias="0.166" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <Button
         android:id="@+id/button_Clicky"
@@ -39,9 +40,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/button_AboutMe"
-        app:layout_constraintVertical_bias="0.124"
+        app:layout_constraintVertical_bias="0.121"
         tools:ignore="MissingConstraints" />
-
 
     <Button
         android:id="@+id/button_LinkCollector"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
-        app:layout_constraintVertical_bias="0.367" />
+        app:layout_constraintVertical_bias="0.306" />
 
     <Button
         android:id="@+id/button_Prime"
@@ -64,5 +64,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_LinkCollector"
         app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/btn_WebService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WebService"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Prime"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/btn_FireBase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Fire_Base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_WebService"
+        app:layout_constraintVertical_bias="0.052" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

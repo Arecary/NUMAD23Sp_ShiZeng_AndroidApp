@@ -18,4 +18,20 @@
     <string name="Find_Primes">Find Primes</string>
     <string name="Terminate_Search">Terminate Search</string>
     <string name="CheckBox">3</string>
+    <string name="WebService">Web Service</string>
+    <string name="WebTransform">Start Transform</string>
+    <string name="Fire_Base">FireBase</string>
+    <string name="Login">Login Page</string>
+    <string name="LoginBtn">Login</string>
+    <string name="ResetPassword">Reset Password</string>
+    <string name="Register">Register</string>
+    <string name="HintEmail">Email Address</string>
+    <string name="HintPassword">Password</string>
+    <string name="RegisterPage">Register Page</string>
+    <string name="HintName">Name</string>
+    <string name="HintAge">Age</string>
+    <string name="user_home_page">User Home Page</string>
+    <string name="logout">Logout</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset">Reset</string>
 </resources>

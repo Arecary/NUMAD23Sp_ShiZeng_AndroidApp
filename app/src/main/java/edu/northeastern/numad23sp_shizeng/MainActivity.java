@@ -4,10 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+import edu.northeastern.numad23sp_shizeng.firebase.FireBase;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button2 = (Button) findViewById(R.id.button_Clicky);
         Button button3 = (Button) findViewById(R.id.button_LinkCollector);
         Button button4 = (Button) findViewById(R.id.button_Prime);
+        Button button5 = findViewById(R.id.btn_WebService);
+        Button button6 = findViewById(R.id.btn_FireBase);
 /*        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
+        button5.setOnClickListener(this);
+        button6.setOnClickListener(this);
 
     }
 
@@ -51,6 +55,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(i);
         } else if (view.getId() == R.id.button_Prime) {
             i.setClass(this, PrimeDirective.class);
+            startActivity(i);
+        } else if (view.getId() == R.id.btn_WebService) {
+            i.setClass(this, WebService.class);
+            startActivity(i);
+        } else if (view.getId() == R.id.btn_FireBase) {
+            i.setClass(this, FireBase.class);
             startActivity(i);
         }
     }
