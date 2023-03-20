@@ -7,63 +7,62 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_HelloWorld"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.109" />
+      android:id="@+id/text_HelloWorld"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hello World!"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.04" />
+    <Button
+      android:id="@+id/button_AboutMe"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/about_me"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.504"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
+      app:layout_constraintVertical_bias="0.059" />
 
     <Button
-        android:id="@+id/button_AboutMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/about_me"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
-        app:layout_constraintVertical_bias="0.119" />
+      android:id="@+id/button_Clicky"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/Clicky"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.499"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/button_AboutMe"
+      app:layout_constraintVertical_bias="0.168"
+      tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button_Clicky"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Clicky"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/button_AboutMe"
-        app:layout_constraintVertical_bias="0.219"
-        tools:ignore="MissingConstraints" />
+      android:id="@+id/button_LinkCollector"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/Link_Collector"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
+      app:layout_constraintVertical_bias="0.389" />
 
     <Button
-        android:id="@+id/button_LinkCollector"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Link_Collector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/text_HelloWorld"
-        app:layout_constraintVertical_bias="0.508" />
-
-    <Button
-        android:id="@+id/button_Prime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Prime_Directive"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_LinkCollector"
-        app:layout_constraintVertical_bias="0.119" />
-
+      android:id="@+id/button_Prime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/Prime_Directive"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button_LinkCollector"
+      app:layout_constraintVertical_bias="0.06" />
     <Button
         android:id="@+id/btn_WebService"
         android:layout_width="wrap_content"
@@ -75,5 +74,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_Prime"
         app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+      android:id="@+id/btn_FireBase"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/Fire_Base"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_WebService"
+      app:layout_constraintVertical_bias="0.34" />
+
+    <Button
+      android:id="@+id/btn_location"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/Location"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.139"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.415" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

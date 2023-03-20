@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button4 = (Button) findViewById(R.id.button_Prime);
         Button button5 = findViewById(R.id.btn_WebService);
         Button button6 = findViewById(R.id.btn_FireBase);
+        Button button7 = findViewById(R.id.btn_location);
 /*        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
         button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
 
     }
 
@@ -61,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(i);
         } else if (view.getId() == R.id.btn_FireBase) {
             i.setClass(this, FireBase.class);
+            startActivity(i);
+        } else if (view.getId() == R.id.btn_location) {
+            i.setClass(this, Location.class);
             startActivity(i);
         }
     }
