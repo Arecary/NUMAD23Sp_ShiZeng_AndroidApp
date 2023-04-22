@@ -2,104 +2,111 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools">
 
+  <application
+    android:allowBackup="true"
+    android:dataExtractionRules="@xml/data_extraction_rules"
+    android:fullBackupContent="@xml/backup_rules"
+    android:icon="@mipmap/ic_launcher_sz"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_sz_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.NUMAD23Sp_ShiZeng"
+    android:usesCleartextTraffic="true"
+    tools:targetApi="31">
+    <activity
+      android:exported="false"
+      android:name=".Fragment">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".Location">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".firebase.ResetPassword">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".firebase.UserHomePage">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".firebase.RegisterPage">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".firebase.FireBase">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".WebService">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".PrimeDirective">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:configChanges="orientation"
+      android:exported="false"
+      android:name=".LinkCollector">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".AboutMe">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="false"
+      android:name=".Clicky">
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+    <activity
+      android:exported="true"
+      android:name=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
 
-    <application
-      android:allowBackup="true"
-      android:dataExtractionRules="@xml/data_extraction_rules"
-      android:fullBackupContent="@xml/backup_rules"
-      android:icon="@mipmap/ic_launcher_sz"
-      android:label="@string/app_name"
-      android:roundIcon="@mipmap/ic_launcher_sz_round"
-      android:supportsRtl="true"
-      android:theme="@style/Theme.NUMAD23Sp_ShiZeng"
-      android:usesCleartextTraffic="true"
-      tools:targetApi="31">
-        <activity
-          android:exported="false"
-          android:name=".Location">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".firebase.ResetPassword">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".firebase.UserHomePage">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".firebase.RegisterPage">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".firebase.FireBase">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".WebService">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".PrimeDirective">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:configChanges="orientation"
-          android:exported="false"
-          android:name=".LinkCollector">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".AboutMe">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:exported="false"
-          android:name=".Clicky">
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-        <activity
-          android:name=".MainActivity"
-          android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+      <meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+    </activity>
+  </application>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-            <meta-data
-              android:name="android.app.lib_name"
-              android:value="" />
-        </activity>
-    </application>
+  <uses-permission android:name="android.permission.INTERNET" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>

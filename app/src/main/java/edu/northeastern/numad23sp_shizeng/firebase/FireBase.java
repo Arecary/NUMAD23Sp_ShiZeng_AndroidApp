@@ -16,9 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
-import edu.northeastern.numad23sp_shizeng.AboutMe;
 import edu.northeastern.numad23sp_shizeng.R;
 
 public class FireBase extends AppCompatActivity implements View.OnClickListener{
@@ -56,6 +54,9 @@ public class FireBase extends AppCompatActivity implements View.OnClickListener{
             startActivity(i);
         } else if (view.getId() == R.id.btn_Login) {
             userLogin();
+        } else if (view.getId() == R.id.btn_ResetPassword) {
+            i.setClass(this, ResetPassword.class);
+            startActivity(i);
         }
     }
 

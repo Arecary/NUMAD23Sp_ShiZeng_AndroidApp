@@ -1,5 +1,6 @@
 package edu.northeastern.numad23sp_shizeng.firebase;
 
+import android.util.Patterns;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,8 +20,8 @@ import edu.northeastern.numad23sp_shizeng.R;
 
 public class ResetPassword extends AppCompatActivity implements View.OnClickListener {
 
-    private EditText email;
-    private Button resetPasswordButton;
+    private EditText etEmail;
+    private Button resetPasswordButton, backLogin;
     private ProgressBar progressBar;
 
     private FirebaseAuth mAuth;
@@ -31,26 +32,39 @@ public class ResetPassword extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reset_password);
 
-        email = (EditText) findViewById(R.id.et_ResetPasswordEmail);
+        etEmail = (EditText) findViewById(R.id.et_ResetPasswordEmail);
         resetPasswordButton = (Button) findViewById(R.id.btn_Reset);
+        backLogin = (Button) findViewById(R.id.btn_BackLogin);
         progressBar = (ProgressBar) findViewById(R.id.proBar_Reset);
 
         mAuth = FirebaseAuth.getInstance();
 
         resetPasswordButton.setOnClickListener(this);
+        backLogin.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
-        reSetPassword();
+        if (view.getId() == R.id.btn_Reset) {
+            reSetPassword();
+        } else if (view.getId() == R.id.btn_BackLogin) {
+            finish();
+        }
+
     }
 
     private void reSetPassword() {
-        String emailInput = email.getText().toString().trim();
+        String emailInput = etEmail.getText().toString().trim();
 
         if (emailInput.isEmpty()) {
-            email.setError("Email is required!");
-            email.requestFocus();
+            etEmail.setError("Email is required!");
+            etEmail.requestFocus();
+            return;
+        }
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
+            etEmail.setError("Please provide valid email!");
+            etEmail.requestFocus();
             return;
         }
 

@@ -79,11 +79,11 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        /*if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             etEmail.setError("Please provide valid email!");
             etEmail.requestFocus();
             return;
-        }*/
+        }
 
         if (password.isEmpty()) {
             etPassword.setError("password is required!");
@@ -115,7 +115,7 @@ public class RegisterPage extends AppCompatActivity implements View.OnClickListe
                                         }
                                     });
                         } else {
-                            Toast.makeText(RegisterPage.this, "Register Failed2, please try again!", Toast.LENGTH_LONG).show();
+                            Toast.makeText(RegisterPage.this, "Register Failed, this address has already registered or password invalid, please try again!", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
                         }
                     }
